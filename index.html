@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header>r
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">Apaza Guillermo</a>
@@ -31,11 +31,9 @@
                             <a class="nav-link" href="#experienciaLaboral">Experiencia laboral</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#educacion">Educaion</a>
+                            <a class="nav-link" href="#educacion">Educacion</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
@@ -248,7 +246,7 @@
                 <form action="correo.php" method="POST" onsubmit="validarGeneral(event)" id="formConsulta">
                     <div class="form-group">
                         <label>Nombre</label>
-                        <input type="text" name="nombre" class="form-control" required placeholder="Juan Perez" id="nombre" onblur="campoRequerido(this.value)">
+                        <input type="text" name="nombre" class="form-control" required placeholder="Juan Perez" id="nombre" onblur="campoRequerido(this)">
                         <div class="valid-feedback">
                             Perfecto..!
                         </div>
@@ -264,8 +262,8 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Consulta</label>
-                        <textarea class="form-control" name="consulta" id="consulta" placeholder="Ingrese su consulta de almenos 10 caracteres" onblur="validarMail(this)"></textarea>
+                        <label>Mensaje</label>
+                        <textarea class="form-control" name="consulta" onblur="revisarConsulta(this)" id="consulta" placeholder="Ingrese su consulta de almenos 10 caracteres"></textarea>
                         <div class="invalid-feedback">
                             Por favor ingrese una consulta valida (almenos 10 caracteres)
                         </div>
@@ -283,10 +281,11 @@
             
         </article>
     </section>
-    <footer class="bg-dark text-light py-4">
+    <footer class="bg-dark text-light py-4 color">
         <div class="container text-center">
-            <i class="fab fa-linkedin fa-2x mr-2"></i>
-            <i class="fab fa-github-square fa-2x"></i>
+            <a href=""><i class="fab fa-linkedin fa-2x mr-1"></i></a>
+            <a href="https://github.com/Guillestations?tab=projects"><i class="fab fa-github-square fa-2x mr-1"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=+54 3814598671"><i class="fab fa-whatsapp-square fa-2x mr-1"></i></a>
             <p class="lead">Apaza Guillermo</p>
             <p>&copy; Todos los derechos reservados</p>
         </div>

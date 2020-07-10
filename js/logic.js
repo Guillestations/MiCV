@@ -20,7 +20,7 @@ document.querySelector('.expandir').addEventListener('click',() => {
 //Validar Formulario
 
 function campoRequerido(elemento){
-    let expresion = "[A-Za-z]";
+    let expresion = /[A-Za-z]/;
     if(elemento.value != "" && expresion.test(elemento.value)){//si esta vacio
         elemento.className = "form-control is-valid";
     }else{
@@ -36,3 +36,15 @@ function validarMail(elemento){
         elemento.className = "form-control is-invalid";
     }
 }
+
+function revisarConsulta(elemento){
+    let expresion = /[a-zA-Z0-9]/;
+    let cantidad = elemento.value;
+    if(cantidad.length >=10 && expresion.test(elemento.value)){//si esta vacio
+        elemento.className = "form-control is-valid";
+    }else{
+        elemento.className = "form-control is-invalid";
+    }
+}
+
+

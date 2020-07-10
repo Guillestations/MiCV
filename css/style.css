@@ -75,3 +75,13 @@ html{
         height: 4rem;
     }
 }
+
+.color a{
+    text-decoration: none;
+    color: #ffff;
+}
+.color a:hover{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffff;
+}

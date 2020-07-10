@@ -11,3 +11,67 @@
 html{
     scroll-behavior: smooth;
 }
+
+/*Boton hacia arriba*/
+.expandir{
+    position: fixed;
+    bottom: 6rem;
+    right: 3rem;
+    width: 2rem;
+    height: 2rem;
+    z-index: -1;
+}
+
+.contraer{
+    width: 0rem;
+    height: 0rem;
+    background: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.contraer i{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    color:#ffff;
+    transition: .50s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .contraer{
+    animation: popop .5s ease-in-out;
+    width: 3rem;
+    height: 3rem;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popop{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 4rem;
+        height: 4rem;
+    }
+    100%{
+        width: 4rem;
+        height: 4rem;
+    }
+}

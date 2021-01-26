@@ -1,17 +1,34 @@
 .fondo{
     background-color: #08AEEA;
-    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    background-image: linear-gradient(0deg, #08AEEA 0%, #5be6f3 100%);
 
 }
 .avatar{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 250px;
 }
 
+#img{
+    border-radius: 25%;
+}
 html{
     scroll-behavior: smooth;
 }
+.fondo-cards {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(0,149,218,0.85) 9.9%, rgba(56,80,114,1) 100.3% );
+}
 
+.text-light {
+    color: #f8f9fa!important;
+}
+
+.fondo-cards1 {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(0, 149, 218, 0.705) 9.9%, rgb(33, 90, 170) 100.3% );
+}
+
+.fondo-cards2 {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(0, 149, 218, 0.555) 9.9%, rgb(43, 72, 112) 100.3% );
+}
 /*Boton hacia arriba*/
 .expandir{
     position: fixed;
@@ -25,8 +42,7 @@ html{
 .contraer{
     width: 0rem;
     height: 0rem;
-    background: #08AEEA;
-    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(0, 149, 218, 0.274) 9.9%, rgb(15, 40, 75) 100.3% );
     border-radius: 50%;
     cursor: pointer;
     transition: .5s;
